@@ -1,0 +1,12 @@
+[
+  {
+    "name": "小明",
+    "score": 85,
+    "pass": true
+  },
+  {
+    "name": "小红",
+    "score": 45,
+    "pass": false
+  }
+]
