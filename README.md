@@ -7,8 +7,7 @@
 ```text
 ai_learning/
   day1_hello.py          # 第一个 Python 文件
-  day2_python_review.py  # 函数和类复习
-  day2_report.txt        # Day2 输出报告
+  day2_review.py  # 函数和类复习
   day3_numpy.py          # NumPy 矩阵运算和 softmax
   day4_pandas.py         # Pandas 读写 CSV 和筛选统计
   day5_plot.py           # Matplotlib 画柱状图、折线图、散点图
