@@ -4,22 +4,33 @@ import torch
 import torch.nn as nn
 import akshare as ak
 import matplotlib.pyplot as plt
+import yfinance as yf
 
 plt.rcParams["font.sans-serif"] = ["SimHei"]
 plt.rcParams["axes.unicode_minus"] = False
 
+# print("正在下载数据...")
+# df = ak.stock_zh_a_hist(
+#     symbol = "600519",
+#     period = "daily",
+#     start_date = "20200101",
+#     end_date = "20241231",
+#     adjust = "qfq",
+# )
+# df = df.rename(columns = {"日期": "date", "收盘": "close", "成交量": "volume"})
+# df["date"] = pd.to_datetime(df["date"])
+# df = df.sort_values("date").reset_index(drop = True)
+# print(f"数据量：{len(df)} 条，从 {df['date'].iloc[0].date()} 到 {df['date'].iloc[-1].date()}")
+
 print("正在下载数据...")
-df = ak.stock_zh_a_hist(
-    symbol = "600519",
-    period = "daily",
-    start_date = "20200101",
-    end_date = "20241231",
-    adjust = "qfq",
-)
-df = df.rename(columns = {"日期": "date", "收盘": "close", "成交量": "volume"})
+# 用苹果公司 AAPL 代替贵州茅台
+df = yf.download("AAPL", start="2020-01-01", end="2026-09-27", auto_adjust=True)
+df = df.reset_index()
+df = df.rename(columns={"Date": "date", "Close": "close", "Volume": "volume"})
 df["date"] = pd.to_datetime(df["date"])
-df = df.sort_values("date").reset_index(drop = True)
+df = df.sort_values("date").reset_index(drop=True)
 print(f"数据量：{len(df)} 条，从 {df['date'].iloc[0].date()} 到 {df['date'].iloc[-1].date()}")
+
 df["ret_1"] = df["close"].pct_change(1)
 df["ret_5"] = df["close"].pct_change(5)
 df["ret_20"] = df["close"].pct_change(20)
