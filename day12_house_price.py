@@ -104,3 +104,6 @@ plt.grid(True)
 plt.tight_layout()
 plt.savefig("day12_house_price.png")
 plt.show()
+
+torch.save(model.state_dict(), "day12_house_model.pth")
+print("\n模型已保存为 day12_house_model.pth")
