@@ -1,2 +1,6 @@
 .venv/
 data/
+.cache/
+output/
+*.bin
+*.safetensors
