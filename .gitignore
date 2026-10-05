@@ -4,3 +4,5 @@ data/
 output/
 *.bin
 *.safetensors
+day27_sft_output/
+day27_sft_model/
