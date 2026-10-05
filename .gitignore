@@ -6,3 +6,5 @@ output/
 *.safetensors
 day27_sft_output/
 day27_sft_model/
+day28_lora_output/
+day28_lora_model/
