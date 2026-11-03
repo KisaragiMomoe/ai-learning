@@ -11,3 +11,13 @@ day28_lora_model/
 day29_dpo_output/
 day29_dpo_model/
 day30_merged_model/
+
+# QQ 机器人的虚拟环境与缓存
+kisaragi_nya_bot/.venv/
+kisaragi_nya_bot/__pycache__/
+kisaragi_nya_bot/**/__pycache__/
+
+# 绝对不要上传群友隐私和本地数据库
+kisaragi_nya_bot/data/
+kisaragi_nya_bot/.env
+kisaragi_nya_bot/.env.prod

@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+Kisaragi_Nya.egg-info/PKG-INFO
+Kisaragi_Nya.egg-info/SOURCES.txt
+Kisaragi_Nya.egg-info/dependency_links.txt
+Kisaragi_Nya.egg-info/requires.txt
+Kisaragi_Nya.egg-info/top_level.txt

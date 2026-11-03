@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: Kisaragi_Nya
+Version: 0.1.0
+Summary: Kisaragi_Nya
+Requires-Python: <4.0,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: nonebot2[fastapi]>=2.5.0
+Requires-Dist: nonebot-adapter-onebot>=2.4.6
+Requires-Dist: nonebot-plugin-apscheduler>=0.5.0
+Requires-Dist: nonebot-plugin-localstore>=0.7.4
+Requires-Dist: nonebot-plugin-orm>=0.8.4
+
+# Kisaragi_Nya
+
+## How to start
+
+1. generate project using `nb create` .
+2. install plugins using `nb plugin install` .
+3. run your bot using `nb run` .
+
+## Documentation
+
+See [Docs](https://nonebot.dev/)
